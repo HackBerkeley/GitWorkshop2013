@@ -1,7 +1,7 @@
-First thing's first, run
-    $ man git
+First thing's first, run:
+        $ man git
 "git - the stupid content tracker"
-Wait what? That didn't tell us much.
+Wait what? 
 
 Intro to Git.
 
@@ -23,7 +23,8 @@ git fetch
 
 Branching
 git checkout (-b)
-git merge
+git merge (bring the target branch in)
+git rebase (rebase out to the target branch)
 
 Staging
 git status
