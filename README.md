@@ -14,6 +14,7 @@ When you push, git needs to know which upstream you're pushing to, so set it wit
 $ git push -u origin master
 Clone automatically sets the remote you cloned from as the upstream.
 
+
 Initialization
 git init
 
@@ -31,7 +32,8 @@ git status
 git diff
 git add
 git rm
-git reset HEAD
+git reset (moves a branch to a specified commit)
+git revert (plops the parent commit of the target down as a new branch under HEAD)
 
 Committing
 git commit (-m)
