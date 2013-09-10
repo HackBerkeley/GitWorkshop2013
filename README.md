@@ -26,7 +26,7 @@ To the leader >>> create a new repository on github and initialize it with a REA
 
 To the entire group >>> Clone your brand new github repository:
 
-    $ git clone https://github.com/your-github-username/your-repository-name.git
+    $ git clone https://github.com/[your-leader's-username]/[your-repository-name.git]
 
 Leader >>> You should then create an empty file called `introductions.py in the git directory by using this command:
 
@@ -60,4 +60,6 @@ and then do the same add-commit-push from earlier:
 If you weren't the first guy to push, you probably got something like:
 
     $ git push
-
+    To https://github.com/[your-leader's-username]/[your-repository-name.git]
+     ! [rejected]        master -> master (non-fast-forward)
+    ...
