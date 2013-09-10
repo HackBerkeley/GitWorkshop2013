@@ -1,9 +1,11 @@
 First thing's first, run:
+
         $ man git
+
 "git - the stupid content tracker"
 Wait what? 
 
-Intro to Git.
+### Intro to Git.
 
 Git is a <em>source code management</em> tool that implements <em>merge based</em> revisioning and optimizes for <em>speed</em>.
 Git stores every single version and branched into compressed blobs, allowing almost every command to be performed locally.
@@ -14,6 +16,9 @@ When you push, git needs to know which upstream you're pushing to, so set it wit
 $ git push -u origin master
 Clone automatically sets the remote you cloned from as the upstream.
 
+Branches, HEAD, and commits just *point* to particular commits. Commits also *point* to their parent commits (multiple if merged.
+
+git config --global merge-conflictstyle diff3
 
 Initialization
 git init
@@ -41,3 +46,5 @@ git log
 
 Pushing (Yesss feels so good)
 git push
+
+Issues
