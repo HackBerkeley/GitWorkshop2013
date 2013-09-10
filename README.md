@@ -18,41 +18,14 @@ Make a new directory and cd into it. Then run
     
 That .git directory is what lets git know it can go to town. Otherwise git will complain that you're not in a git repository.
 
+Grab a group of 3-4 people and introduce yourselves! Now we're going to have your repositories introduce themselves.
+Go to https://github.com and make an account. Then elect a leader to create a public repository and add the members of the group to the account.
 
-You're downstream of the remote because data is passed down (downloaded) to you. The remote is upstream.
-When you push, git needs to know which upstream you're pushing to, so set it with
-$ git push -u origin master
-Clone automatically sets the remote you cloned from as the upstream.
 
-Branches, HEAD, and commits just *point* to particular commits. Commits also *point* to their parent commits (multiple if merged.
 
-git config --global merge-conflictstyle diff3
+Write a python function that prints an introduction:
 
-Initialization
-git init
+    def introduce():
+        print "Hi! I'm Git."
 
-Remote
-git remote add
-git fetch
 
-Branching
-git checkout (-b)
-git merge (bring the target branch in)
-git rebase (rebase out to the target branch)
-
-Staging
-git status
-git diff
-git add
-git rm
-git reset (moves a branch to a specified commit)
-git revert (plops the parent commit of the target down as a new branch under HEAD)
-
-Committing
-git commit (-m)
-git log
-
-Pushing (Yesss feels so good)
-git push
-
-Issues
