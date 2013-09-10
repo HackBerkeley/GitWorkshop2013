@@ -1,14 +1,22 @@
 First thing's first, run:
 
-        $ man git
+    $ man git
 
 "git - the stupid content tracker"
 Wait what? 
 
 ### Intro to Git.
 
-Git is a <em>source code management</em> tool that implements <em>merge based</em> revisioning and optimizes for <em>speed</em>.
+Git is a *source code management* tool that implements *merge based* revisioning and optimizes for *speed*.
 Git stores every single version and branched into compressed blobs, allowing almost every command to be performed locally.
+
+Make a new directory and cd into it. Then run
+
+    $ git init
+    $ ls -a
+    .  ..  .git
+    
+That .git directory is what lets git know it can go to town. Otherwise git will complain that you're not in a git repository.
 
 
 You're downstream of the remote because data is passed down (downloaded) to you. The remote is upstream.
