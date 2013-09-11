@@ -36,6 +36,8 @@ To tell git to track a file use
 
     $ git add <filename>
 
+(PROTIP: You can run `$ git status` to figure out what files you've changed and which ones you've already added.)
+
 Once you've added all the files you want in your project (this is called staging), you should `commit them and then push the file to github:
 
     $ git commit -m "<This string tells you about what changes were made in the commit.>"
