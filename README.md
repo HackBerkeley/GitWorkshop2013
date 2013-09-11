@@ -72,7 +72,7 @@ To fix this, do:
 
     $ git pull
 
-which will bring your teammates's changes from the remote repo to your local machine. Since you've committed your local changes beforehand,
+which will bring your teammates' changes from the remote repo to your local machine. Since you've committed your local changes beforehand,
 git is going to ask you to write a commit message for the merge. 
 
 You'll probably see a message like this
