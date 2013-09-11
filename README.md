@@ -28,7 +28,7 @@ To the entire group >>> Clone your brand new github repository:
 
     $ git clone https://github.com/[your-leader's-username]/[your-repository-name.git]
 
-Leader >>> You should then create an empty file called `introductions.py in the git directory by using this command:
+Leader >>> You should then create an empty file called `introductions.py` in the git directory by using this command:
 
     $ touch introductions.py
 
@@ -45,8 +45,8 @@ Group >>> Run
 
     $ git pull
 
-Ta-da! The new `introductions.py file is now on your local machine.
-Open up that `introductions.py and write a python function that prints an introduction of yourself:
+Ta-da! The new `introductions.py` file is now on your local machine.
+Open up that `introductions.py` and write a python function that prints an introduction of yourself:
 
     def introduce():
         print "Hi! I'm Git."
@@ -63,3 +63,62 @@ If you weren't the first guy to push, you probably got something like:
     To https://github.com/[your-leader's-username]/[your-repository-name.git]
      ! [rejected]        master -> master (non-fast-forward)
     ...
+
+That means the remote repository was a commit or two ahead of yours thanks to your teammates successfully pushing their code before you.
+
+To fix this, do:
+
+    $ git pull
+
+which will bring your teammates's changes from the remote repo to your local machine.
+
+SOMETHING ABOUT VIM OR EMACS
+
+You'll probably see a message like this
+
+    $ git pull
+    Auto-merging introductions.py
+    CONFLICT (content): Merge conflict in introductions.py
+    Automatic merge failed; fix conflicts and then commit the result.
+
+Oh noes! Open up the `introductions.py` and you'll see something like:    
+
+    <<<<<<< HEAD
+    def introduce():
+        print "Hi! I'm Fred."
+    =======
+    def introduce():
+        print "Hi! I'm George."
+    >>>>>>> [really long string of letters and numbers]
+
+You now have to manually resolve these conflicts, for example:
+
+    def introduceFred():
+        print "Hi! I'm Fred."
+    
+    def introduceGeorge():
+        print "Hi! I'm George."
+
+Now do ye olde add-commit-push sequence again and all should be well.
+
+Leader >>> Once everybody has collected their `introduceName()` functions and pushed up to the repositories, add these lines at the bottom.
+
+    def main():
+        introducePersonA()
+        introducePersonB()
+        introducePersonC()
+
+    if __name__ == "__main__":
+        main()
+
+Basically, write a function `main()` that calls the introduce functions for everybody in your group, then add that last if statement at the bottom that calls `main()`.
+
+If you run
+
+    $ python introductions.py
+    "Hi my name is Ron!"
+    "Hi my name is Ginny!"
+    "Hi my name is Fred!"
+    "Hi my name is George!"
+
+your program will introduce everybody. Hurray! Now add-commit-push it up to github so your entire group can `git pull` and enjoy your finished project.
