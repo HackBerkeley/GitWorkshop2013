@@ -72,9 +72,8 @@ To fix this, do:
 
     $ git pull
 
-which will bring your teammates's changes from the remote repo to your local machine.
-
-SOMETHING ABOUT VIM OR EMACS
+which will bring your teammates's changes from the remote repo to your local machine. Since you've committed your local changes beforehand,
+git is going to ask you to write a commit message for the merge. 
 
 You'll probably see a message like this
 
@@ -124,3 +123,14 @@ If you run
     "Hi my name is George!"
 
 your program will introduce everybody. Hurray! Now add-commit-push it up to github so your entire group can `git pull` and enjoy your finished project.
+
+--------------------------------
+
+Best Practices:
+
+- Write a descriptive commit message.
+- Break up commits into small changes.
+- Make master clean. Work on your own local branch and merge changes into master when you know they work.
+- Add your SSH key to github so you don't have to type in your user/pass every time.
+- git checkout [filename] to restore it to the state of the latest commit.
+- http://git-scm.com/book/en/Getting-Started-First-Time-Git-Setup Set up git properly the first time.
